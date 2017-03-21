@@ -1,0 +1,14 @@
+// Raleway font
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,700,900);
+
+@font-face {
+  font-family: 'Colmans';
+  src: url('../fonts/colmans/Colmans-Regular.eot'); // IE9 Compat Modes
+  src: url('../fonts/colmans/Colmans-Regular.eot?#iefix') format('embedded-opentype'), // IE6-IE8
+       url('../fonts/colmans/Colmans-Regular.woff') format('woff'), // Modern Browsers
+       url('../fonts/colmans/Colmans-Regular.ttf')  format('truetype'), // Safari, Android, iOS
+       url('../fonts/colmans/Colmans-Regular.svg#cdc358bded5d426aa4f2a9515265b725') format('svg'); // Legacy iOS
+
+  font-style: normal;
+  font-weight: 400;
+}

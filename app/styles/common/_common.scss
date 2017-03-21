@@ -1,0 +1,43 @@
+%image-center-buffer,
+.image-center-buffer {
+  height: 800px;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+
+  @include max-image {
+    left: 0;
+    position: relative;
+
+    img {
+      height: auto;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  img {
+    height: 800px;
+    margin-left: -50%;
+    max-width: none;
+    position: relative;
+    width: 2560px;
+
+    @include mobile-only {
+      height: auto;
+      max-width: 600px;
+    }
+  }
+}
+
+.messages__wrapper {
+  left: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: fixed;
+  right: 0;
+  top: 0;
+}

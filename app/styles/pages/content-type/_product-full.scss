@@ -1,0 +1,307 @@
+.product {
+  padding: 80px 0;
+
+  @include tablet-portrait-and-below {
+
+    .col6 {
+      width: 96%;
+    }
+  }
+
+  .row {
+
+    .product--row1--col6a {
+      max-height: 500px;
+      text-align: center;
+
+      img {
+        max-height: 400px;
+        width: auto;
+      }
+
+      .desktop-social-links-lower {
+        display: inline-block;
+        padding: 20px;
+        vertical-align: top;
+
+        &.active {
+          padding-left: 30px;
+        }
+
+        p {
+          padding-top: 14px;
+        }
+
+        ul {
+          display: inline-block;
+          margin: 0;
+          padding: 0;
+
+          li {
+            display: inline-block;
+            font-size: 2em;
+            list-style-type: none;
+            padding: 0 7px;
+
+            span {
+              font-size: 1em;
+              font-weight: bold;
+            }
+          }
+
+          span {
+            cursor: pointer;
+            display: inline-block;
+            font-size: 2em;
+            list-style-type: none;
+            padding: 0 7px;
+          }
+        }
+
+        a {
+          color: $brand-grey;
+
+          i {
+            line-height: 1.2em;
+          }
+        }
+      }
+    }
+
+    .product--row1--col6b {
+      @include tablet-portrait-and-below {
+        padding-top: 4%;
+      }
+
+      h1,
+      h2 {
+        color: $brand-red;
+        font-size: 2em;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      .product--description {
+
+        p {
+          font-size: 1.2em;
+          line-height: 1.4em;
+        }
+      }
+
+      .product--tabs {
+
+        .product--tab-header {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+
+          li {
+            border: 1px solid $brand-red;
+            display: inline-block;
+            margin: 0 10px 0 0;
+            padding: 0;
+
+            &.product--tab--ibotta--header {
+              background-color: $brand-ibotta-grey;
+              border: 1px solid $brand-ibotta-grey;
+
+
+              a {
+                color: $brand-white;
+                text-transform: none;
+                font-family: $font-custom;
+              }
+            }
+
+            &.active {
+              background-color: $brand-red;
+
+              a {
+                color: $brand-white;
+              }
+            }
+
+            a {
+              display: block;
+              font-weight: bold;
+              padding: 10px;
+              text-transform: uppercase;
+
+              &:hover,
+              &:active,
+              &:focus {
+                outline: 0;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+
+        .product--tab {
+          display: none;
+        }
+
+        .product--tab--ibotta {
+          display: none;
+        }
+
+        .product--tab--buy-now {
+          background-color: $brand-red;
+          color: $brand-white;
+          display: none;
+
+          &.active {
+            display: block;
+          }
+
+          .product--tab--buy-now--col6a,
+          .product--tab--buy-now--col6b {
+            padding: 15px 0;
+
+            > div > div:nth-child(1) {
+              display: none;
+            }
+          }
+
+          h4 {
+            color: $brand-white;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin: 0 0 15px;
+          }
+
+          p {
+            color: $brand-white;
+            font-size: 1em;
+            line-height: 1.1em;
+            margin: 0 0 10px;
+          }
+
+          a {
+            background-color: $brand-white;
+            display: block;
+            line-height: 0;
+            margin-bottom: 15px;
+            padding: 10px;
+            text-align: center;
+
+            img {
+              max-height: 27px;
+              max-width: 140px;
+              width: auto;
+            }
+          }
+        }
+
+        .product--tab--product-details {
+          background-color: $brand-red;
+          color: $brand-white;
+          padding: 10px 0;
+
+          &.active {
+            display: block;
+          }
+
+          .product--tab--product-details--col6a {
+            border: 1px solid $brand-white;
+            padding: 4px;
+
+            @include tablet-landscape-and-below {
+              width: 96%;
+            }
+
+            h3 {
+              color: $brand-white;
+              font-size: 1.2em;
+              font-weight: bold;
+            }
+
+            .nut-group-1,
+            .nut-group-2,
+            .nut-group-3,
+            .nut-group-4,
+            .nut-group-5,
+            .nut-group-6,
+            .nut-group-7 {
+
+              div {
+                white-space: nowrap;
+
+                div {
+                  display: inline-block;
+                  font-size: 1em;
+                  white-space: nowrap;
+
+                  &.label {
+                    font-weight: bold;
+                  }
+                }
+              }
+            }
+
+            .nut-group-3,
+            .amount-per-serving,
+            .percent-daily-values,
+            .nut-group-4,
+            .nut-group-5,
+            .nut-group-6,
+            .nut-group-7 {
+              border-bottom: 1px solid $brand-white;
+            }
+
+            .nut-group-4,
+            .nut-group-5,
+            .nut-group-6,
+            .nut-group-7 {
+
+              div {
+
+                div:nth-child(2) {
+                  display: inline;
+                  font-weight: bold;
+                  margin-right: 5px;
+                  white-space: normal;
+
+                  span {
+                    float: right;
+                  }
+                }
+              }
+            }
+
+            .final-message {
+              font-size: .8em;
+            }
+
+            .percent-daily-values {
+              font-weight: bold;
+              text-align: right;
+            }
+
+            .amount-per-serving {
+              text-align: right;
+            }
+
+            .nut-group-2 {
+              border-bottom: 2px solid $brand-white;
+            }
+          }
+
+          .product--tab--product-details--col6b {
+
+            @include tablet-landscape-and-below {
+              padding-top: 4%;
+              width: 96%;
+            }
+
+            .label {
+              font-size: 1.2em;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}

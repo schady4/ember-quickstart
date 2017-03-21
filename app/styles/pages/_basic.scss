@@ -1,0 +1,18 @@
+#site-logo {
+  left: 20px;
+  position: absolute;
+  top: 45px;
+  width: 177px;
+
+  @include frontpage-feature-header-and-below {
+    display: none !important;
+  }
+
+  a {
+    display: block;
+  }
+}
+
+.logo-container {
+  z-index: 100;
+}

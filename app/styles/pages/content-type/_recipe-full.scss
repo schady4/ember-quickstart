@@ -1,0 +1,425 @@
+.recipe-full {
+  padding-bottom: 80px;
+
+  .col6 {
+
+    @include tablet-landscape-and-below {
+      float: none;
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  .row1col6a {
+    .desktop-social-links-lower {
+      display: inline-block;
+      float: left;
+      padding: 20px 0;
+      vertical-align: top;
+      width: 100%;
+
+      &.active {
+        padding-left: 30px;
+      }
+
+      p {
+        padding-top: 14px;
+      }
+
+      ul {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+        li {
+          display: inline-block;
+          font-size: 2em;
+          list-style-type: none;
+          padding: 0 7px;
+          padding-left: 0;
+
+          span {
+            font-size: 1em;
+            font-weight: bold;
+            padding-left: 0;
+          }
+        }
+
+        span {
+          cursor: pointer;
+          display: inline-block;
+          font-size: 2em;
+          list-style-type: none;
+          padding: 0 7px;
+        }
+
+        #youtubeiframespan {
+          float: right;
+          padding-left: 0;
+          padding-right: 0;
+
+          @include mobile-landscape-and-below {
+            float: inherit;
+            margin-top: 5%;
+          }
+
+          a {
+
+            i {
+              color: $brand-red;
+            }
+
+            span {
+              font-size: 20px;
+              padding-left: 0;
+              padding-right: 0;
+
+              @include mobile-landscape-and-below {
+                font-size: 1em;
+              }
+            }
+          }
+        }
+      }
+
+      a {
+        color: $brand-grey;
+
+        i {
+          line-height: 1.2em;
+        }
+      }
+    }
+  }
+
+  .row1col6b {
+    text-align: center;
+
+    img {
+
+      @include tablet-landscape-and-below {
+        max-width: 500px;
+        width: 100%;
+      }
+    }
+  }
+
+  .recipe-full--header-video {
+    position: relative;
+    .recipe-full-lets-cook-icon {
+      bottom: 0;
+      display: block;
+      height: 175px;
+      left: 0;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      z-index: 100;
+
+      @include sixteen-nine {
+        display: block;
+      }
+
+      @include tablet-landscape-and-below {
+        display: none;
+      }
+
+      img {
+        @include border-radius(50%);
+        @include box-shadow(0 0 17px rgba($brand-grey, .3));
+        cursor: pointer;
+        height: 125px;
+        width: 125px;
+      }
+    }
+
+    .video-center-buffer {
+      background-color: $brand-black;
+
+      video {
+        margin-bottom: -8px;
+        opacity: .8;
+      }
+
+      h1 {
+        font-size: 3em;
+
+        @include tablet-landscape-and-below {
+          display: none;
+        }
+
+        div {
+          bottom: 0;
+          color: $brand;
+          left: 0;
+          padding: 20% 0;
+          position: absolute;
+          right: 0;
+          text-align: center;
+          top: 0;
+        }
+      }
+
+      .youtube-embedvideo-link {
+        bottom: 0;
+        cursor: pointer;
+        left: 0;
+        padding: 25% 25% 15%;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        text-decoration: none;
+        top: 0;
+        z-index: 1;
+
+        @include mobile-only {
+          padding: 10% 25% 15%;
+        }
+
+        span {
+          color: $brand;
+          font-size: 2em;
+
+         }
+
+        .fa-stack {
+          margin-top: 8%;
+          width: 84px;
+
+          i {
+            font-size: 3em;
+          }
+
+          .fa-play-circle {
+            color: $brand-red;
+          }
+        }
+      }
+    }
+  }
+
+  .recipe-full--header-embedvideo {
+
+    .video-center-buffer {
+      position: relative;
+
+      .youtubeclosebutton {
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        top: 5%;
+        width: 10% !important;
+
+        i {
+          color: $brand;
+          font-size: 2em;
+        }
+      }
+    }
+
+    iframe {
+      @include desktop-and-up {
+        min-height: 800px;
+      }
+
+      @include tablet-only {
+        min-height: 600px;
+      }
+
+      @include mobile-only {
+        min-height: 350px;
+      }
+    }
+
+  }
+
+  .recipe-full--header-image {
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+
+    &.max-100-percent,
+    &.max-full-screen {
+
+      .recipe-full-lets-cook-icon {
+        display: block;
+      }
+    }
+
+    .recipe-full-lets-cook-icon {
+      bottom: 0;
+      display: none;
+      height: 175px;
+      left: 0;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      z-index: 100;
+
+      @include sixteen-nine {
+        display: block;
+      }
+
+      img {
+        @include border-radius(50%);
+        @include box-shadow(0 0 17px rgba($brand-grey, .3));
+        cursor: pointer;
+        height: 125px;
+        width: 125px;
+      }
+    }
+
+    .image-center-buffer {
+
+      @include max-image {
+        float: none;
+        left: 0;
+        position: relative;
+      }
+
+      img {
+        max-width: none;
+      }
+    }
+  }
+
+  .container {
+    padding-top: 90px;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  .recipe-full--display-title {
+    color: $brand-red;
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+
+  .recipe-full--display-sub-title {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .recipe-full--ingredients,
+  .recipe-full--directions {
+
+    .header {
+      color: $brand-red;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    ul,
+    ol {
+      margin: 0;
+      padding: 0;
+
+      li {
+        font-size: 1.2em;
+        padding: 3px 0;
+      }
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    ol {
+      padding-left: 18px;
+
+      li {
+        padding-bottom: 15px;
+      }
+    }
+  }
+
+  .recipe-full--ingredients {
+    margin-bottom: 45px;
+  }
+
+  .recipe-full--related-product {
+
+    @include tablet-landscape-and-below {
+      padding-top: 50px;
+    }
+
+    header {
+      display: none;
+    }
+
+    .product-teaser--hero-image {
+      text-align: center;
+
+      img {
+        max-width: 250px;
+      }
+    }
+
+    .product-teaser--title {
+      color: $brand-red;
+      cursor: pointer;
+      font-size: 1.4em;
+      text-align: center;
+
+      .madewith {
+        color: $brand-grey;
+      }
+    }
+  }
+
+  .row2col6b {
+    padding-top: 50px;
+  }
+
+  .row11 {
+    border: 1px solid $brand-light-grey;
+    border-width: 1px 0;
+
+    // heat level
+    .row11col3a,
+    .row11col3b,
+    .row11col3c,
+    .row11col3d {
+      display: inline-block;
+      float: none;
+      margin: 0;
+      vertical-align: bottom;
+      width: 24%;
+
+      @include mobile-landscape-and-below {
+        width: 48%;
+      }
+
+      div {
+        padding-bottom: 40px;
+        padding-top: 15px;
+        position: relative;
+
+        div:nth-child(1) {
+          bottom: 0;
+          font-size: 1.5em;
+          font-weight: bold;
+          left: 0;
+          position: absolute;
+          right: 0;
+          text-align: center;
+        }
+
+        div:nth-child(2) {
+          font-size: 2.3em;
+          text-align: center;
+          white-space: nowrap;
+
+          img {
+            max-width: 25px;
+            padding-left: 2px;
+          }
+        }
+      }
+    }
+  }
+}

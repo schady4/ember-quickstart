@@ -1,0 +1,21 @@
+footer.main {
+  position: relative;
+
+  #block-footercontent {
+    padding: 5px 0 40px;
+
+    .content {
+      @extend %container;
+
+      p {
+        font-size: 1.1em;
+        margin: 0;
+        text-align: center;
+
+        a {
+          color: $brand-red;
+        }
+      }
+    }
+  }
+}

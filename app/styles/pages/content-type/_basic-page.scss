@@ -1,0 +1,152 @@
+.basic-page {
+
+  body.page-node-42 & {
+    margin-bottom: 0;
+  }
+
+  .display-title {
+    display: none;
+
+    body.page-node-9 & {
+      color: $brand-red;
+      display: block;
+      font-size: $h1-size;
+      margin: 5% 0;
+      text-align: center;
+    }
+  }
+
+  .influencer-upper-text {
+    .col12 {
+      padding: 0 5% 5%;
+      text-align: center;
+
+      p {
+        font-size: 12pt;
+      }
+    }
+  }
+
+  .hotmessyoutube {
+    margin-right: 0;
+
+    @include tablet-portrait-and-below {
+      margin: 0;
+      width: 100%;
+    }
+
+    iframe {
+      height: 506px;
+    }
+  }
+
+  .hotmessinfo {
+    background-color: $brand-red;
+    margin-left: 0;
+    min-height: 506px;
+    padding: 2%;
+
+    @include tablet-portrait-and-below {
+      margin: 0;
+      padding: 6%;
+      width: 100%;
+    }
+
+    p {
+      color: $brand-white;
+      font-size: 12pt;
+
+      a {
+        background-color: $brand-white;
+        color: $brand-red;
+        padding: 6% 15%;
+      }
+    }
+
+    p:nth-child(4) {
+      @include tablet-only {
+        margin-top: 10%;
+      }
+    }
+  }
+
+  .influencer-recipe-main-row {
+    margin: 5% 0 0;
+
+    .influencer-recipe-main-col {
+
+      @include tablet-portrait-and-below {
+        width: 100%;
+      }
+    }
+
+    .influencer-recipe-main-image {
+      @include tablet-portrait-and-below {
+        margin: 5% 0;
+        width: 100%;
+      }
+    }
+
+    .influencer-recipe-header {
+      padding: 2%;
+
+      h2 {
+        color: $brand-red;
+        margin-bottom: 0;
+      }
+
+      p {
+        font-size: 12pt;
+        margin-bottom: 5px;
+      }
+    }
+
+    .influencer-recipe-info-index {
+      border-bottom: 2px solid $brand-grey;
+      border-top: 2px solid $brand-grey;
+      margin: 2%;
+      padding: 2% 0;
+      text-align: center;
+
+      .col3 {
+        font-weight: bold;
+
+        @include mobile-only {
+          font-size: 12pt;
+
+          h4 {
+            font-size: 18pt;
+          }
+        }
+      }
+
+      .influencer-heat {
+        margin-top: 8px;
+      }
+    }
+
+    .influencer-recipe-directions {
+      .col6 {
+        @include mobile-only {
+          width: 100%;
+        }
+
+        @include tablet-only {
+          width: 100%;
+        }
+      }
+
+      h4 {
+        color: $brand-red;
+      }
+
+      ol {
+        -webkit-padding-start: 5px;
+      }
+
+      p {
+        font-size: 12pt;
+      }
+    }
+  }
+}

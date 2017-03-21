@@ -1,0 +1,26 @@
+.menu {
+  background-color: $brand-white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  a {
+    text-decoration: none;
+  }
+
+  .container {
+
+
+    .ember-view {
+      float: left;
+    }
+
+    .links {
+      float: right;
+
+      a {
+        padding: 20px 20px;
+      }
+    }
+  }
+}

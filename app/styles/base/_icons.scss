@@ -1,0 +1,21 @@
+// ==================================================
+// Icons via custom font
+// ==================================================
+// @extend on parent element.
+%icon {
+  display: block;
+  font-family: $font-custom;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  speak: none;
+  text-transform: none;
+}
+
+%icon-ibotta {
+
+  &::before {
+    @extend %icon;
+    content: 'I';
+  }
+}

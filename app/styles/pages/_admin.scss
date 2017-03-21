@@ -1,0 +1,95 @@
+// ==================================================
+// Admin overrides
+// ==================================================
+
+body.page-admin,
+body.page-node-add,
+body.page-node-edit {
+
+  .admin-panel {
+    background: $brand-light-grey;
+    border: 1px solid $brand-grey;
+    margin-bottom: 1em;
+    padding: 1em;
+
+    dd {
+      border-bottom: 1px solid $brand-grey;
+      padding: .5em 0;
+
+      &:last-child {
+        border: 0;
+    }
+  }
+}
+
+  // border box does strange things to Drupals listing drag handles, so disable it
+  .tabledrag-handle .handle {
+    box-sizing: content-box;
+  }
+
+  table {
+    font-size: .8rem;
+  }
+}
+
+
+// ==================================================
+// From Bartik
+// ==================================================
+
+// -------------------- Buttons    ------------------
+
+.form-submit,
+a.button {
+  @include border-radius(15px);
+  background: lighten($brand-light-grey, 5%);
+  border: 1px solid $brand-light-grey;
+  border-bottom: 1px solid $brand-grey;
+  border-left-color: $brand-light-grey;
+  border-radius: 15px;
+  border-right-color: $brand-light-grey;
+  color: $brand-grey;
+  cursor: pointer;
+  font-size: .929em;
+  font-weight: normal;
+  margin-bottom: 1em;
+  margin-right: .6em;
+  padding: 4px 17px;
+  text-align: center;
+}
+
+a.button {
+
+  &:visited,
+  &:hover,
+  &:focus,
+  &:active,
+  &:link {
+    color: $brand-grey;
+    text-decoration: none;
+  }
+}
+
+input.form-submit:hover,
+input.form-submit:focus {
+  background: $brand-light-grey;
+}
+
+.highlighted {
+  left: 20px;
+  position: absolute;
+  right: 20px;
+  top: 150px;
+  z-index: 9999;
+}
+
+//*************************************
+//  user login styles
+//*************************************
+.path-user {
+
+  #block-colmans-theme-content {
+    @extend %container;
+    padding-top: 250px;
+  }
+}
